@@ -1,0 +1,25 @@
+body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 100%;
+}
+
+#smol {
+    width: 20%;
+    border: 10px solid rgb(49, 49, 49);
+    box-sizing: border-box;
+    border-radius: 100%;
+    margin: 5% 5%;
+    
+}
+
+.need_this {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+

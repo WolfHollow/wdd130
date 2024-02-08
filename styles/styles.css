@@ -3,14 +3,18 @@
     border: 2px solid rgb(87, 23, 23);
 }*/
 
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
 body {
     background-color: blueviolet;
     padding:0px;
+    font-family: "protest revolution", Georgia, 'Times New Roman', Times, serif;
 }
 
 #content {
     max-width: 1080px;
     background-color: aliceblue;
+    
 }
 
 header {
@@ -25,15 +29,16 @@ nav {
 
 .nav_link {
     padding: 1%;
-    color:brown;
+    color:black;
     font-size: 1.3em;
     text-decoration: none;
+    text-align: center;
 
 }
 
 nav a:hover {
 
-    color:blue;
+    color:blueviolet;
     background-color: rgb(255, 0, 0);
     text-align: center;
 }
@@ -42,6 +47,7 @@ img {
     width: 50%;
     display: block;
     margin:0 auto;
+    border-radius: 100% 90%;
 }
 
 #main_title {
@@ -51,6 +57,20 @@ img {
 
 p {
     text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    font-size: 150%;
+    line-height: 1.5em;
+    background-color: beige;
+    padding: 25px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    border-radius: 100% 50px;
+}
+
+footer p {
+    background-color: blueviolet;
+
 }
 
 footer {
