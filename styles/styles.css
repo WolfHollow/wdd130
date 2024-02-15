@@ -48,11 +48,29 @@ img {
     display: block;
     margin:0 auto;
     border-radius: 100% 90%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    box-shadow: 5px 10px 10px black; /* this is not working for some reasion dont use commas*/
+    transition: transform .5s;
+}
+
+img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+    /*this is so cool*/
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 
 #main_title {
     font-family: 4em;
     text-align: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
 }
 
 p {
@@ -80,3 +98,7 @@ footer {
 footer a {
     color:blue
 }
+
+/* @media screen and (max-width = 900px){ 
+    desplay
+}*/
