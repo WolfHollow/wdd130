@@ -4,46 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby Box</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
-        <a href="index.html" id="logo_link">
-            <img class="logo" src="images/logo.jpg" alt="Logo"> 
-        </a>
-        <nav>
-            <a href="index.html">Home</a>
-            <!-- See w3 schools for css -->
-            <div class="dropdown">
-                <button class="dropbtn">Items</button>
-                <div class="dropdown-content">
-                  <a href="painting.html">Panting</a>
-                  <a href="soapCarving.html">Soap Carving</a>
+        <div class="flex-container">
+            <a href="index.html" id="logo_link"><img class="logo" src="images/logo.png" alt="Logo"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <!-- See w3 schools for css -->
+                <div class="dropdown">
+                    <button class="dropbtn">Items</button>
+                    <div class="dropdown-content">
+                        <a href="painting.html">Panting</a>
+                        <a href="soapCarving.html">Soap Carving</a>
+                    </div>
                 </div>
-              </div>
-            <a href="contactus.html">Contact Us</a>
-        </nav>
+                <a href="contactus.html">Contact Us</a>
+            </nav>    
+        </div>
     </header>
 
     <main>
         <h1>Welcome to HobbyBox</h1>
         <h2>Everything you need to start a hobby</h2>
-        <section class="painting">
-            <a href="painting.html"><img class="card_img" src="images\paintingBox1.jpg" alt="Painting Box"></a>
-            <h3>Painting</h3>
-        </section>
+        <div class="products">
+            <section class="painting">
+                <a href="painting.html"><img class="card_img" src="images\paintingBox1.jpg" alt="Painting Box"></a>
+                <h3>Painting</h3>
+            </section>
 
-        <section class="soap_carving">
-            <a href="soapCarving.html"><img class="card_img" src="images\soapCarvingBox1.jpg" alt="Soap Carving Box"></a>
-            <h3>Soap Carving</h3>
-        </section>
+            <section class="soap_carving">
+                <a href="soapCarving.html"><img class="card_img" src="images\soapCarvingBox1.jpg" alt="Soap Carving Box"></a>
+                <h3>Soap Carving</h3>
+            </section>
+        </div>
     </main>
 
     <footer>
         <p>HobbyBox &copy; 2024 - </p>
         <p><a href="siteplan.html">Site Plan</a></p>
         <p><a href="contactus.html">Contact Us</a></p>
-        <div class="social">
-            <!-- I need to get this stuff from him still -->
+        <!-- I need to get this stuff from him still -->
+        <!-- <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="facebook icon">
             </a>
@@ -53,7 +56,7 @@
             <a href="https://instagram.com" target="_blank">
                 <img src="images/instagram.png" alt="instagram icon">
             </a>
-        </div>
+        </div> -->
     </footer>
 </body>
 </html>
