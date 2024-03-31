@@ -1,6 +1,4 @@
-/* * {
-    border: 2px solid rgb(87, 23, 23);
-} */
+/* * {border: 2px solid rgb(87, 23, 23);} */
 
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
@@ -38,22 +36,29 @@ body {
 
 header {
     background-color: var(--nav-background-color);
+    padding: 15px 50px;
 }
 
+
 #logo_link {
-    padding-top: 5px;
+    /* padding-top: 5px; */
+    width: 120px;
+    height: 66px;
     justify-self: center;
     align-self: center;
 }
 
 .logo {
     width: 120px;
-    padding: 5px 5px;
+    justify-self: center;
+    align-self: center;
+    /* padding: 5px 5px; */
 }
 
 nav {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     align-items: center;
 }
 
@@ -136,10 +141,12 @@ main {
 h1 {
     color: var(--headline-color-on-white);
     text-align: center;
+    font-family: var(--heading-font);
 }
 h2 {
     color: var(--headline-color-on-white);
     text-align: center;
+    font-family: var(--heading-font);
 }
 
 .products {
@@ -166,11 +173,11 @@ h2 {
 footer {
     background-color: var(--nav-background-color);
     color: var(--nav-link-color);
-    padding: 25px 50px;
+    padding: 15px 50px;
     margin-top: 0px;
     display: flex;
-    /* justify-content: space-around; */
-    /* align-items: center; */
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer p {
@@ -179,8 +186,10 @@ footer p {
 }
 
 footer a {
+    text-align: center;
     color: var(--nav-link-color);
     text-decoration: none;
+    font-family: var(--link-font);
     padding: 16px;
     font-size: 1.2em;
 }
@@ -188,6 +197,7 @@ footer a {
 footer a:hover {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-hover-link-color);
+    font-family: var(--link-font);
 }
 
 footer .social img {
@@ -197,6 +207,122 @@ footer .social img {
     /* align-items: left; */
 }
 
+
+
+.item-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 500px;
+}
+
+/* slide show for other pages */
+/* * {box-sizing:content-box} */
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position:  absolute;
+  top: 100px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(143, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: var(--headline-color-on-color);
+  font-size: 12px;
+  /* padding: 8px 12px; */
+  position: relative;
+  top: 15px;
+  text-align: center;
+  z-index: 999;
+  display: inline-block;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: 1;
+  position: relative;
+  
+  /* top: -80px; */
+}
+
+.dots {
+    text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mySlides fade {
+    text-align: center;
+    z-index: 99;
+}
+.slides {
+    /* width: 100%; */
+    height: 450px;
+    max-height: 450px;
+    padding: 10px;
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+.item-content p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    font-size: 1.5em;
+}
+@keyframes fade {
+  0% {opacity: 0.4}
+  100% {opacity: 1}
+}
 
 
 
