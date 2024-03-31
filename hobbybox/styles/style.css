@@ -309,7 +309,7 @@ footer .social img {
     height: 450px;
     max-height: 450px;
     padding: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: block;
     margin: 0 auto;
 }
