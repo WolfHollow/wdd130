@@ -28,12 +28,29 @@
         </div>
     </header>
 
-    <main>
-        <!-- this is not enough stuff but I dont know what else to add -->
+    <main class="contact">
         <h1>Contact Us</h1>
-        <h2>"Phone Number"</h2>
-        <h2>"Email"</h2>
-        
+        <!-- action="/my-handling-form-page" -->
+        <div id="feedback"></div>
+        <form  method="post">
+            <ul>
+                <li><!--for = id  type says what keybord to use  name is the id I guess--> 
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input required type="email" id="mail" name="user_email" placeholder="youremail@here.com"/>
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send your message</button>
+                </li>
+            </ul>
+        </form>
     </main>
 
     </div>
